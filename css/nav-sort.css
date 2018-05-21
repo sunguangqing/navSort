@@ -1,0 +1,249 @@
+/*reset css*/
+body, div, p, input, button, textarea, select, img, h1, h2, h3, h4, h5, h6, dl, dd, dt, ul, ol, li, a, em, i,
+table, tbody, thead, th, td, em {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea, select, button, img {
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+:focus {
+    outline: none;
+}
+/*浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/*清除浮动*/
+.clearfix {
+    zoom: 1;
+    clear: both;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+/*对齐*/
+.text-center{
+    text-align: center;
+}
+/*行内元素*/
+.inline, span, a, b, i, em {
+    display: inline-block;
+}
+/*按钮*/
+.btn{
+    color: #fff;
+    background-color: #108ee9;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+/*按钮*/
+[class$="-btn"]{
+    cursor: pointer;
+}
+
+/*开始*/
+body{
+    color: #262626;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+.wrap{
+    width: 1200px;
+    min-height: 800px;
+    background-color: #fff;
+    padding: 24px 15px;
+    margin: 50px auto;
+}
+/*添加导航分类*/
+.add-nav .btn{
+    width: 155px;
+    line-height: 40px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+/*导航列表*/
+.nav-caption > div{
+    line-height: 47px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+}
+.nav-name{
+    width: 70%;
+    padding-left: 21px;
+}
+.nav-sort{
+    width: 20%;
+    text-align: center;
+}
+.nav-del{
+    width: 10%;
+    text-align: center;
+}
+.nav-top > div{
+    height: 47px;
+    background-color: #e6f7ff;
+    border-bottom: 1px solid #e8e8e8;
+}
+.nav-name .input{
+    width: 190px;
+    height: 34px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    margin-top: 6px;
+    padding: 0 10px;
+}
+.nav-name .text-btn{
+    color: #108ee9;
+    width: 33.33%;
+    text-align: center;
+}
+.nav-del{
+    line-height: 47px;
+}
+.nav-list > div{
+    height: 47px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.nav-list .nav-name{
+    padding-left: 44px;
+}
+.nav-list .del-btn,
+.nav-top .del-list-btn{
+    color: #108ee9;
+    cursor: pointer;
+}
+/*利用伪类实现上下按钮图标*/
+/*默认样式*/
+.nav-sort .up-btn,
+.nav-sort .down-btn{
+    position: relative;
+    margin-right: 13px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.nav-sort .up-btn:after,
+.nav-sort .up-btn:before,
+.nav-sort .down-btn:after,
+.nav-sort .down-btn:before{
+    position: absolute;
+    content: '';
+}
+.nav-sort .up-btn:after,
+.nav-sort .down-btn:after{
+    width: 6px;
+    height: 10px;
+    background-color: #d9d9d9;
+}
+.nav-sort .up-btn:after{
+    top: 9px;
+}
+.nav-sort .down-btn:before,
+.nav-sort .up-btn:before{
+    left: -3px;
+    border: 6px solid transparent;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+}
+.nav-sort .up-btn:before{
+    border-bottom-color: #d9d9d9;
+}
+.nav-sort .down-btn:before{
+    border-top-color: #d9d9d9;
+}
+.nav-sort .down-btn:before{
+    top: 10px;
+}
+.nav-sort .up-btn:before{
+    top: -11px;
+}
+/*一级导航 可点击样式*/
+.nav-top .down-btn.active:after,
+.nav-top .up-btn.active:after{
+    background-color: #1296db;
+}
+.nav-top .down-btn.active:before{
+    border-top-color: #1296db;
+}
+.nav-top .up-btn.active:before{
+    border-bottom-color: #1296db;
+}
+/*二级导航 可点击样式*/
+.nav-list .down-btn.active:after,
+.nav-list .up-btn.active:after {
+    background-color: #1afa29;
+}
+.nav-list .up-btn.active:before{
+    border-bottom-color: #1afa29;
+}
+.nav-list .down-btn.active:before{
+    border-top-color: #1afa29;
+}
+/*图标 结束*/
+/*保存*/
+.save .btn{
+    line-height: 32px;
+    padding: 0 35px;
+    margin-top: 23px;
+}
+.save-success{
+    display: none;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    border: 1px solid #d9d9d9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    background-color: #fff;
+    line-height: 22px;
+    padding: 7px 18px;
+    margin-left: -62px;
+}
+.save-success .icon{
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: url(../images/shop-sprite.png) no-repeat -232px -138px;
+    margin-right: 9px;
+}
+
+

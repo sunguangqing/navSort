@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 根据浏览器的屏幕大小自适应的展现合适的效果 -->
+    <meta name="applicable-device" content="pc,mobile"/>
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <!--自动选择更好的浏览器-->
+    <meta name="renderer" content="webkit">
+    <title>导航列表排序</title>
+    <link href="css/nav-sort.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="wrap">
+    <div class="add-nav"><span class="btn">+添加分类</span></div>
+    <div class="clearfix nav-caption">
+        <div class="fl nav-name">分类名称</div>
+        <div class="fl nav-sort">排序</div>
+        <div class="fl nav-del">操作</div>
+    </div>
+    <!--分类导航-->
+    <div class="main">
+        <div class="nav-box">
+            <div class="nav-top clearfix">
+                <div class="fl nav-name"><input class="input" value="一级导航 - 第一个" type="text" />
+                    <span class="text-btn"><i class="add-btn">添加子分类</i></span>
+                    <span class="text-btn"><i class="set-btn">设为导航</i></span>
+                </div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-list-btn">删除</span></div>
+            </div>
+            <div class="nav-list clearfix">
+                <div class="fl nav-name"><input class="input" value="二级导航 - 第一个" type="text" /></div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-btn">删除</span></div>
+            </div>
+            <div class="nav-list clearfix">
+                <div class="fl nav-name"><input class="input" value="二级导航 - 第二个" type="text" /></div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-btn">删除</span></div>
+            </div>
+        </div>
+        <div class="nav-box">
+            <div class="nav-top clearfix">
+                <div class="fl nav-name"><input class="input" value="一级导航 - 第二个" type="text" />
+                    <span class="text-btn"><i class="add-btn">添加子分类</i></span>
+                    <span class="text-btn"><i class="set-btn">设为导航</i></span>
+                </div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-list-btn">删除</span></div>
+            </div>
+            <div class="nav-list clearfix">
+                <div class="fl nav-name"><input class="input" value="二级导航 - 第一个" type="text" /></div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-btn">删除</span></div>
+            </div>
+            <div class="nav-list clearfix">
+                <div class="fl nav-name"><input class="input" value="二级导航 - 第二个" type="text" /></div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-btn">删除</span></div>
+            </div>
+        </div>
+        <div class="nav-box">
+            <div class="nav-top clearfix">
+                <div class="fl nav-name"><input class="input" value="一级导航 - 第三个" type="text" />
+                    <span class="text-btn"><i class="add-btn">添加子分类</i></span>
+                    <span class="text-btn"><i class="set-btn">设为导航</i></span>
+                </div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-list-btn">删除</span></div>
+            </div>
+            <div class="nav-list clearfix">
+                <div class="fl nav-name"><input class="input" value="二级导航 - 第一个" type="text" /></div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-btn">删除</span></div>
+            </div>
+            <div class="nav-list clearfix">
+                <div class="fl nav-name"><input class="input" value="二级导航 - 第二个" type="text" /></div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-btn">删除</span></div>
+            </div>
+            <div class="nav-list clearfix">
+                <div class="fl nav-name"><input class="input" value="二级导航 - 第三个" type="text" /></div>
+                <div class="fl nav-sort">
+                    <span class="up-btn"></span><span class="down-btn"></span>
+                </div>
+                <div class="fl nav-del"><span class="del-btn">删除</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="save text-center">
+        <span class="btn">保存</span>
+    </div>
+</div>
+
+<!--保存成功提示-->
+<div class="save-success">
+    <i class="icon"></i>保存成功
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/nav-sort.js"></script>
+</body>
+</html>
