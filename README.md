@@ -151,7 +151,7 @@ https://sunguangqing.github.io/navSort/nav-sort.html
 #### `JS代码：`
 ### --- 页面初始化
 ```JavaScript
-// 一级分类导航
+// 一级导航
 function firstLevelFunc() {
     var firstLevel = $(".nav-box");
     firstLevel.each(function () {
@@ -163,7 +163,7 @@ function firstLevelFunc() {
         }
     });
 }
-// 二级分类导航
+// 二级导航
 function secondLevelFunc() {
     var secondLevel = $(".nav-list"); 
     secondLevel.each(function () {
