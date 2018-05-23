@@ -149,7 +149,7 @@ https://sunguangqing.github.io/navSort/nav-sort.html
 ```
 
 #### `JS代码：`
-### -- 页面初始化
+### --- 页面初始化
 ```JavaScript
 // 一级分类导航
 function firstLevelFunc() {
@@ -180,7 +180,7 @@ secondLevelFunc();
 firstLevelFunc();
 ```
 
-### -- 点击排序按钮之后重新遍历
+### --- 点击排序按钮之后重新遍历
 ```JavaScript
 // 一级导航
 function firstLevFunc() {
@@ -208,7 +208,7 @@ function secondLevFunc(_this) {
 }
 ```
 
-### -- 上移
+### --- 上移
 ```JavaScript
 // 一级导航
 $(document).on("click", ".up-btn.parent_btn", function () {
@@ -231,7 +231,7 @@ $(document).on("click", ".up-btn.child_btn", function () {
 });
 ```
 
-### -- 下移
+### --- 下移
 ```JavaScript
 // 一级导航
 $(document).on("click", ".down-btn.parent_btn", function () {
@@ -254,7 +254,7 @@ $(document).on("click", ".down-btn.child_btn", function () {
 });
 ```
 
-### -- 删除一组列表
+### --- 删除一组列表
 ```JavaScript
 $(document).on("click", ".del-list-btn", function () {
     $(this).parents(".nav-box").remove();
@@ -263,7 +263,7 @@ $(document).on("click", ".del-list-btn", function () {
 });
 ```
 
-### -- 删除单个列表
+### --- 删除单个列表
 ```JavaScript
 $(document).on("click", ".del-btn", function () {
     var _parents = $(this).parents(".nav-box");
